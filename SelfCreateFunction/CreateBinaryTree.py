@@ -1,4 +1,4 @@
-from Tree_Node import TreeNode
+from SelfCreateFunction.Tree_Node import TreeNode
 
 
 class CreateBinaryTree(object):
