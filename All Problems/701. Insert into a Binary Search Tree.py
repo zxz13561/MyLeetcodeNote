@@ -1,5 +1,5 @@
-from CreateBinaryTree import CreateBinaryTree
-from Tree_Node import TreeNode
+from SelfCreateFunction.CreateBinaryTree import CreateBinaryTree
+from SelfCreateFunction.Tree_Node import TreeNode
 
 
 class Solution(object):
