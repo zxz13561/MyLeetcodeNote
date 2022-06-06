@@ -32,7 +32,7 @@ class CreateBinaryTree(object):
                 # set left node
                 if isLeft and i <= len(tree_data) - 1:
                     # get parent node from queue, and setting left node
-                    node_queue[count].left = TreeNode(tree_data[i])
+                    node_queue[count].left = TreeNode(tree_data[i]) if tree_data[i] else None
 
                     # write left node into queue as new element
                     node_queue[i] = node_queue[count].left
@@ -47,7 +47,7 @@ class CreateBinaryTree(object):
                 # set right node
                 if isRight and i <= len(tree_data) - 1:
                     # get parent node from queue, and setting right node
-                    node_queue[count].right = TreeNode(tree_data[i])
+                    node_queue[count].right = TreeNode(tree_data[i]) if tree_data[i] else None
 
                     # write left node into queue as new element
                     node_queue[i] = node_queue[count].right
