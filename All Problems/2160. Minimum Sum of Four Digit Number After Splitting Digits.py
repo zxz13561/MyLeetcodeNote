@@ -1,12 +1,10 @@
 class Solution(object):
-    def minimum_sum(self, nums) -> int:
-        for i in range(1, len(str(nums))):
-            shift = 10 ** i
-            new1, new2 = nums // shift, nums % shift
-            print(new1, new2, new1 + new2)
+    def minimum_sum(self, num):
+        n_list = sorted(list(str(num)))
+        return int(str.join("", n_list[0] + n_list[3])) + int(str.join("", n_list[1] + n_list[2]))
 
 
 if __name__ == '__main__':
-    input_num = 2932
+    input_num = 2687
     run = Solution()
     print(run.minimum_sum(input_num))
